@@ -16,7 +16,7 @@ h1, .screen-grid h3 {
   font-size: 100px;
 }
 
-.screen-grid div:nth-child(2) {
+.screen-grid > div:nth-child(2) {
   border: 1px solid hotpink;
 }
 

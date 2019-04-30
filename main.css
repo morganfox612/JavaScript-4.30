@@ -1,3 +1,32 @@
-.hidden {
-  display: none;
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  padding-top: 2%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+@keyframes pageSlide {
+  from {
+    position: relative;
+    left: 70%;
+    transform: rotateY(180deg);
+  }
+
+  to {
+    position: relative;
+    left: 0%;
+    transform: rotateY(0deg);
+  }
+}
+
+.page {
+  animation: pageSlide 1.3s;
 }

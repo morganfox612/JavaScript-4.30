@@ -1,0 +1,36 @@
+h1, .screen-grid h3 {
+  text-align: center;
+}
+
+.screen-grid {
+  display: grid;
+  grid-template: 500px / 50% 50%;
+}
+
+.screen-grid div:nth-child(1) {
+  border: 1px solid aqua;
+  text-align: center;
+}
+
+.screen-grid div:nth-child(1) p {
+  font-size: 100px;
+}
+
+.screen-grid div:nth-child(2) {
+  border: 1px solid hotpink;
+}
+
+.negative-balance {
+  color: purple;
+  animation: flash 2s infinite alternate;
+}
+
+@keyframes flash {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,13 +1,22 @@
-let x = document.getElementById('profileBtn')
-let para = document.getElementsByClassName('para')
-
-// function functionName() {}
-funciton hideElement() {
-  para[3].classList.add('hidden')
+function lightTheme() {
+  document.body.style.backgroundColor = '#fff'
+  document.body.style.color = '#333'
 }
 
-// thisIsCalled camelCase
-// this_is_called snake_case
+function darkTheme() {
+  document.body.style.backgroundColor = '#333'
+  document.body.style.color = '#fff'
+}
 
-// takes arguments: 1. the evnt, 2. the funtion to run when event happens.
-para[0].addEventListener('click', hideElement)
+function sepiaTheme() {
+  document.body.style.backgroundColor = '#cc9d68'
+  document.body.style.color = '#333'
+}
+
+function turnPage() {
+  let screen = document.getElementById('screen')
+  screen.classList.add('page')
+  setTimeout(function() {
+    scren.classList.remove('page')
+  }, 1400)
+}
